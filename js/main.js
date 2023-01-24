@@ -19,15 +19,15 @@
 
 
 
-let user = document.querySelector("#name-surname");
-let km = document.querySelector("#km-valor");
-let age = document.querySelector("#age-valor");
+const user = document.querySelector("#name-surname");
+const km = document.querySelector("#km-valor");
+const age = document.querySelector("#age-valor");
 //console.log(user, km, age);
 
 let price = 0;
 let discountedPrice = 0;
 
-let button_generate_el = document.querySelector("#button-generate");
+const button_generate_el = document.querySelector("#button-generate");
 
 
 //console.log(km.value);
