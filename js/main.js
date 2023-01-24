@@ -40,8 +40,8 @@ button_generate_el.addEventListener(
             alert("Inserisci correttamente i dati");
         } 
         else{
+            price = 0.21 * parseFloat(km.value);
             if (age.value == "minorenne"){
-                price = 0.21 * parseFloat(km.value);
                 discountedPrice = price - ((price * 20) / 100);
                 // alert("UTENTE MINORENNE - Il prezzo finale del biglietto è: " + discountedPrice.toFixed(2));
                 // console.log(age.value);
@@ -51,7 +51,6 @@ button_generate_el.addEventListener(
 
             }
             else if(age.value == "anziano"){
-                price = 0.21 * parseFloat(km.value);
                 discountedPrice = price - ((price * 40) / 100);
                 // alert("UTENTE ANZIANO - Il prezzo finale del biglietto è: " + discountedPrice.toFixed(2));
                 // console.log(age.value);
@@ -60,7 +59,6 @@ button_generate_el.addEventListener(
                 document.getElementById("price-ticket").innerHTML = discountedPrice.toFixed(2);   
             }
             else{
-                price = 0.21 * parseFloat(km.value);
                 // alert("UTENTE ADULTO - Il prezzo finale del biglietto è: " + price.toFixed(2));
                 // console.log(age.value);
                 // console.log(price);
