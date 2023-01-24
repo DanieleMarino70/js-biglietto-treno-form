@@ -1,0 +1,15 @@
+
+/* GENERAL */
+body{
+    background-color: rgb(231, 122, 0);
+}
+
+label{
+    display: block;
+}
+
+/* UTILS */
+.container{
+    background-color: wheat;
+}
+
