@@ -22,7 +22,7 @@
 let user = document.querySelector("#name-surname");
 let km = document.querySelector("#km-valor");
 let age = document.querySelector("#age-valor");
-console.log(user, km, age);
+//console.log(user, km, age);
 
 let price = 0;
 let discountedPrice = 0;
@@ -30,7 +30,7 @@ let discountedPrice = 0;
 let button_generate_el = document.querySelector("#button-generate");
 
 
-console.log(km.value);
+//console.log(km.value);
 
 
 button_generate_el.addEventListener(
