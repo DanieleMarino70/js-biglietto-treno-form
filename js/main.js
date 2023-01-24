@@ -67,7 +67,7 @@ button_generate_el.addEventListener(
             }
 
             document.getElementById("user-name").innerHTML = user.value;
-            document.getElementById("random-coach").innerHTML = Math.floor(Math.random() * 10);
+            document.getElementById("random-coach").innerHTML = Math.floor(Math.random() * 10 + 1);
             document.getElementById("random-code-cp").innerHTML = Math.floor(Math.random() * (92000 - 90000 + 1)) + 90000;
             
         } 
