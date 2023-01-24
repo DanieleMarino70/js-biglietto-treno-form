@@ -43,23 +43,35 @@ button_generate_el.addEventListener(
             if (age.value == "minorenne"){
                 price = 0.21 * parseFloat(km.value);
                 discountedPrice = price - ((price * 20) / 100);
-                alert("UTENTE MINORENNE - Il prezzo finale del biglietto è: " + discountedPrice.toFixed(2));
-                console.log(age.value);
-                console.log(discountedPrice);
+                // alert("UTENTE MINORENNE - Il prezzo finale del biglietto è: " + discountedPrice.toFixed(2));
+                // console.log(age.value);
+                // console.log(discountedPrice);
+                document.getElementById("age-discount").innerHTML = "Biglietto Minorenne";
+                document.getElementById("price-ticket").innerHTML = discountedPrice.toFixed(2);    
+
             }
             else if(age.value == "anziano"){
                 price = 0.21 * parseFloat(km.value);
                 discountedPrice = price - ((price * 40) / 100);
-                alert("UTENTE ANZIANO - Il prezzo finale del biglietto è: " + discountedPrice.toFixed(2));
-                console.log(age.value);
-                console.log(discountedPrice);
+                // alert("UTENTE ANZIANO - Il prezzo finale del biglietto è: " + discountedPrice.toFixed(2));
+                // console.log(age.value);
+                // console.log(discountedPrice);
+                document.getElementById("age-discount").innerHTML = "Biglietto Over 65";
+                document.getElementById("price-ticket").innerHTML = discountedPrice.toFixed(2);   
             }
             else{
                 price = 0.21 * parseFloat(km.value);
-                alert("UTENTE ADULTO - Il prezzo finale del biglietto è: " + price.toFixed(2));
-                console.log(age.value);
-                console.log(price);
+                // alert("UTENTE ADULTO - Il prezzo finale del biglietto è: " + price.toFixed(2));
+                // console.log(age.value);
+                // console.log(price);
+                document.getElementById("age-discount").innerHTML = "Biglietto Standard";
+                document.getElementById("price-ticket").innerHTML = price.toFixed(2); 
             }
+
+            document.getElementById("user-name").innerHTML = user.value;
+            document.getElementById("random-coach").innerHTML = Math.floor(Math.random() * 10);
+            document.getElementById("random-code-cp").innerHTML = Math.floor(Math.random() * (92000 - 90000 + 1)) + 90000;
+            
         } 
 
 

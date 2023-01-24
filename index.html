@@ -21,14 +21,14 @@
     <section>
         <h2 class="text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
         <div class="container rounded-2">
-            <form action="">
-                <label for="name-surname">Nome Cognome</label>
+            <form action="" class="pt-3 pb-3">
+                <label>Nome Cognome</label>
                 <input type="text" id="name-surname">
     
-                <label for="">Km da percorrere</label>
+                <label>Km da percorrere</label>
                 <input type="text" id="km-valor">
     
-                <label for="">Fascia d'età</label>
+                <label>Fascia d'età</label>
                 <select name="" id="age-valor">
                     <option value="adulto">Maggiorenne</option>
                     <option value="minorenne">Minorenne</option>
@@ -41,10 +41,32 @@
         </div>
     </section>
 
-    <section>
+    <section id="your-ticket">
         <h2 class="text-center text-white">IL TUO BIGLIETTO</h2>
         <div class="container rounded-2">
             <h5>DETTAGLIO PASSEGGERI</h5>
+            <div class="row text-center">
+                <div class="col bg-dark text-warning">
+                    <p>NOME PASSEGGERO</p>
+                    <p id="user-name"></p>
+                </div>
+                <div class="col">
+                    <p>Offerta</p>
+                    <p id="age-discount"></p>
+                </div>
+                <div class="col">
+                    <p>Carrozza</p>
+                    <p id="random-coach"></p>
+                </div>
+                <div class="col">
+                    <p>Codice CP</p>
+                    <p id="random-code-cp"></p>
+                </div>
+                <div class="col">
+                    <p>Costo biglietto</p>
+                    <p id="price-ticket"></p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
